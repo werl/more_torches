@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "moretorches:bone_torch" },
+        "facing=east": { "model": "moretorches:bone_torch_wall" },
+        "facing=south": { "model": "moretorches:bone_torch_wall", "y": 90 },
+        "facing=west": { "model": "moretorches:bone_torch_wall", "y": 180 },
+        "facing=north": { "model": "moretorches:bone_torch_wall", "y": 270 }
+    }
+}
