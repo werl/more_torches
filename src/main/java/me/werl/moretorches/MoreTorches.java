@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ModData.ID, version = ModData.VERSION, name = "Bone Sticks")
+@Mod(modid = ModData.ID, version = ModData.VERSION, name = "More Torches")
 public class MoreTorches {
 
     @Mod.Instance(ModData.ID)
@@ -24,15 +24,17 @@ public class MoreTorches {
         // log = event.getModLog();
 
         BlocksInit.preInit();
+        BlocksInit.init();
+        proxy.registerRenderer();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        BlocksInit.init();
+
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        proxy.registerRenderer();
+
     }
 }

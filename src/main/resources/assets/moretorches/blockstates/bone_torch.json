@@ -1,9 +1,31 @@
 {
-    "variants": {
-        "facing=up": { "model": "moretorches:bone_torch" },
-        "facing=east": { "model": "moretorches:bone_torch_wall" },
-        "facing=south": { "model": "moretorches:bone_torch_wall", "y": 90 },
-        "facing=west": { "model": "moretorches:bone_torch_wall", "y": 180 },
-        "facing=north": { "model": "moretorches:bone_torch_wall", "y": 270 }
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "moretorches:blocks/bone_torch"
     }
+  },
+
+  "variants": {
+    "facing": {
+      "up": {
+        "model": "moretorches:bone_torch"
+      },
+      "east": {
+        "model": "moretorches:bone_torch_wall"
+      },
+      "south": {
+        "model": "moretorches:bone_torch_wall",
+        "y": 90
+      },
+      "west": {
+        "model": "moretorches:bone_torch_wall",
+        "y": 180
+      },
+      "north": {
+        "model": "moretorches:bone_torch_wall",
+        "y": 270
+      }
+    }
+  }
 }
