@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "moretorches",
+  "name": "More Torches",
+  "description": "Adds more torches to your game",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["werl"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

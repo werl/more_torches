@@ -2,7 +2,9 @@ package me.werl.moretorches;
 
 import me.werl.moretorches.data.ModData;
 import me.werl.moretorches.init.BlocksInit;
+import me.werl.moretorches.init.TileEntityInit;
 import me.werl.moretorches.proxy.IMainProxy;
+import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -21,11 +23,11 @@ public class MoreTorches {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        // log = event.getModLog();
 
         BlocksInit.preInit();
-        BlocksInit.init();
         proxy.registerRenderer();
+
+        TileEntityInit.init();
     }
 
     @EventHandler

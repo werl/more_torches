@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "moretorches:blocks/bone_torch"
-    }
-}

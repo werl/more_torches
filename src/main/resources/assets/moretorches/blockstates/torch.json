@@ -1,0 +1,40 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+  },
+
+  "variants": {
+    "facing": {
+      "up": {
+        "model": "moretorches:torch"
+      },
+      "east": {
+        "model": "moretorches:torch_wall"
+      },
+      "south": {
+        "model": "moretorches:torch_wall",
+        "y": 90
+      },
+      "west": {
+        "model": "moretorches:torch_wall",
+        "y": 180
+      },
+      "north": {
+        "model": "moretorches:torch_wall",
+        "y": 270
+      }
+    },
+    "sticktype": {
+      "bone": {
+        "textures": {
+          "torch": "moretorches:blocks/bone_torch"
+        }
+      },
+      "jungle": {
+        "textures": {
+          "torch": "moretorches:blocks/jungle_torch"
+        }
+      }
+    }
+  }
+}
