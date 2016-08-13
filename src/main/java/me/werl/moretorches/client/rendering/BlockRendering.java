@@ -15,10 +15,15 @@ public class BlockRendering {
 
     public static void init () {
         ModelLoader.setCustomStateMapper(BlocksInit.newTorch, new StateMap.Builder().build());
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BlocksInit.newTorch), 0,
-                new ModelResourceLocation(BlocksInit.newTorch.getRegistryName(), "inventory"));
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BlocksInit.newTorch), 1,
-                new ModelResourceLocation(ModData.ID + ":" + EnumStickType.JUNGLE.getName(), "inventory"));
+        //ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BlocksInit.newTorch), 0,
+                //new ModelResourceLocation(BlocksInit.newTorch.getRegistryName(), "inventory"));
+        //ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BlocksInit.newTorch), 1,
+                //new ModelResourceLocation(ModData.ID + ":" + EnumStickType.JUNGLE.getName(), "inventory"));
+        for (EnumStickType stick : EnumStickType.values()) {
+            ModelResourceLocation location = new ModelResourceLocation(ModData.ID + ":" + stick.getName(), "inventory");
+            Item item = Item.getItemFromBlock(BlocksInit.newTorch);
+            ModelLoader.setCustomModelResourceLocation(item, stick.getMeta(), location);
+        }
     }
 
 }
