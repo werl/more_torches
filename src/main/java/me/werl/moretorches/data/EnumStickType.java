@@ -8,7 +8,8 @@ import org.lwjgl.Sys;
  */
 public enum EnumStickType implements IStringSerializable {
     BONE(0, "bone"),
-    JUNGLE(1, "jungle");
+    JUNGLE(1, "jungle"),
+    CAKE(2,"cake");
 
     private final String name;
     private final int meta;

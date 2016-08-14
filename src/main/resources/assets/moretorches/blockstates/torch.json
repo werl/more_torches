@@ -34,6 +34,11 @@
         "textures": {
           "torch": "moretorches:blocks/jungle_torch"
         }
+      },
+      "cake": {
+        "textures": {
+          "torch": "moretorches:blocks/cake_torch"
+        }
       }
     }
   }
